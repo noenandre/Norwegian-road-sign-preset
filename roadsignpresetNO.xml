@@ -13,13 +13,16 @@
 	</sign>
 
 	<sign ref="NO:306.1" name="Forbudt for motorvogn med unntak av liten elektrisk motorvogn">
-		<tag key="motor_vehicle" value="no"/>
+		<tag key="motor_vehicle" value="no" ident="access"/>
 		<supplementary id="NO:802"/>
 		<supplementary id="NO:806"/>
 		<supplementary id="NO:808.301"/>
 		<supplementary id="NO:808.303"/>
 		<supplementary id="NO:808.305"/>
 		<supplementary id="NO:808.311"/>
+		<supplementary id="NO:808.313"/>
+		<supplementary id="NO:808.315"/>
+		<supplementary id="NO:808.317"/>
 	</sign>
 
 	<sign ref="NO:306.3" name="Forbudt for traktor og for motorredskap konstruert for fart mindre enn 40 km/t">
@@ -217,10 +220,24 @@
 	</sign>
 	
 	<sign ref="NO:808.307" supplementary="yes" name="Gjelder ikke varetransport (tidsrom)">
+		<tag tag_ref="access" append_value="delivery"/>
 	</sign>
 
-
 	<sign ref="NO:808.311" supplementary="yes" name="Gjelder ikke moped">
+		<tag key="moped" value="yes"/>
+	</sign>
+
+	<sign ref="NO:808.313" supplementary="yes" name="Gjelder ikke buss">
+		<tag key="bus" value="yes"/>
+	</sign>
+	
+	<sign ref="NO:808.315" supplementary="yes" name="Gjelder ikke taxi">
+		<tag key="taxi" value="yes"/>
+	</sign>
+
+	<sign ref="NO:808.317" supplementary="yes" name="Gjelder ikke buss og taxi">
+		<tag key="bus" value="yes"/>
+		<tag key="taxi" value="yes"/>
 	</sign>
 
 	<sign ref="NO:808.331" supplementary="yes" name="Gjelder (bru, undergang) ved (sted)">
