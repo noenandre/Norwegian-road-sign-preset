@@ -1,6 +1,8 @@
 En norsk profil for Roadsign-pluginet til JOSM.
 Den er langt i fra komplett! Pullrequsts er velkomne.
 
+<img src=https://user-images.githubusercontent.com/5470915/185767765-0f72488a-9ee7-49bc-8cba-b10d5e3c2cfb.png width="500"/>
+
 ## Nyttige lenker
 * [Dokumentasjon](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/RoadSigns) til Roadsign-pluginet
 * [Eksempel på preset fil](https://josm.openstreetmap.de/browser/osm/applications/editors/josm/plugins/roadsigns/data/roadsignpresetDE.xml)
