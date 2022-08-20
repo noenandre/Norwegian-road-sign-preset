@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<roadsignpreset country="NO">
+	<sign ref="NO:302" name="Innkjøring forbudt">
+		<tag key="oneway" value="yes" ident="restriction"/>
+		<supplementary id="NO:807.6U"/>
+	</sign>
+
+	<sign ref="NO:306.0" name="Forbudt for kjøretøy">
+		<tag key="vehicle" value="no"/>
+		<supplementary id="NO:802"/>
+
+	</sign>
+
+	<sign ref="NO:306.1" name="Forbudt for motorvogn">
+		<tag key="motor_vehicle" value="no"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:806"/>
+		<supplementary id="NO:808.301"/>
+		<supplementary id="NO:808.303"/>
+		<supplementary id="NO:808.305"/>
+		<supplementary id="NO:808.311"/>
+	</sign>
+
+	<sign ref="NO:306.3" name="Forbudt for traktor og for motorredskap konstruert for fart mindre enn 40 km/t">
+		<tag key="agricultural" value="no"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
+	<sign ref="NO:306.4" name="Forbudt for motorsykkel og moped">
+		<tag key="motorcycle" value="no"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:806"/>
+		<supplementary id="NO:808.311"/>
+	</sign>
+
+	<sign ref="NO:306.5" name="Forbudt for lastebil og trekkbil">
+		<tag key="hgv" value="no"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:806"/>
+		<supplementary id="NO:808.301"/>
+		<supplementary id="NO:808.305"/>
+		<supplementary id="NO:808.305"/>
+
+	</sign>
+
+	<sign ref="NO:306.6" name="Forbudt for syklende og fører av liten elektrisk motorvogn">
+		<tag key="bicycle" value="no"/>
+		<tag key="small_electric_vehicle" value="no"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
+	<sign ref="NO:306.7" name="Forbudt for gående">
+		<tag key="foot" value="no"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
+	<sign ref="NO:306.8" name="Forbudt for gående, syklende og fører av liten elektrisk motorvogn">
+		<tag key="foot" value="no"/>
+		<tag key="bicycle" value="no"/>
+		<tag key="small_electric_vehicle" value="no"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
+	<sign ref="NO:306.9" name="Forbudt for ridende">
+		<tag key="horse" value="no"/>
+		<supplementary id="NO:802"/>
+	</sign>
+	
+	<sign ref="NO:306.10" name="Forbudt for små elektriske kjøretøy">
+		<tag key="small_electric_vehicle" value="no"/>
+	</sign>
+
+	<sign ref="NO:308" name="Forbudt for transport av farlig gods">
+		<tag key="hazmat" value="no"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:806"/>
+		<supplementary id="NO:808.345"/>
+	</sign>
+
+	<sign ref="NO:310" name="Forbudt for motorvogn med flere enn to hjul og med tillatt totalvekt høyere enn angitt" traffic_sign_tag="NO:310[$weightrating]">
+		<tag key="maxweightrating:motor_vehicle:conditional" value="$weightrating @ (wheels>2)"/>
+		<parameter ident="weightrating" input="textfield" suffix=' t' default="3.5"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
+	<sign ref="NO:312" name="Breddegrense" traffic_sign_tag="NO:312[$width]">
+		<tag key="maxwidth" value="$width"/>
+		<parameter ident="width" input="textfield" suffix=' m' default="2.3"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:808.331"/>
+		<supplementary id="NO:808.333"/>
+	</sign>
+
+	<sign ref="NO:314" name="Høydegrense" traffic_sign_tag="NO:314[$height]">
+		<tag key="maxheight" value="$height"/>
+		<parameter ident="height" input="textfield" suffix=' m' default="3.5"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:808.331"/>
+		<supplementary id="NO:808.333"/>
+		<supplementary id="NO:808.339"/>
+		<supplementary id="NO:808.341"/>
+	</sign>
+
+	<sign ref="NO:316" name="Lengdegrense" traffic_sign_tag="NO:316[$lenght]">
+		<tag key="maxlenght" value="$lenght"/>
+		<parameter ident="lenght" input="textfield" suffix=' m' default="15"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:808.331"/>
+		<supplementary id="NO:808.333"/>
+	</sign>
+
+	<sign ref="NO:318.1" name="Totalvektgrense for kjøretøy" traffic_sign_tag="NO:318.1[$weight]">
+		<tag key="maxweight" value="$weight"/>
+		<parameter ident="weight" input="textfield" suffix=' tonn' default="12"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:808.331"/>
+		<supplementary id="NO:808.333"/>
+		<supplementary id="NO:808.343"/>
+	</sign>
+
+	<sign ref="NO:318.2" name="Totalvektgrense for vogntog" traffic_sign_tag="NO:318.2[$weight]">
+		<tag key="maxgcweight" value="$weight"/>
+		<parameter ident="weight" input="textfield" suffix=' t' default="30"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:808.331"/>
+		<supplementary id="NO:808.333"/>
+		<supplementary id="NO:808.343"/>
+	</sign>
+	
+	<sign ref="NO:320" name="Aksellastgrense" traffic_sign_tag="NO:320[$weight]">
+		<tag key="maxaxleload" value="$weight"/>
+		<parameter ident="weight" input="textfield" suffix=' t' default="3"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:808.331"/>
+		<supplementary id="NO:808.333"/>
+	</sign>
+
+	<sign ref="NO:322" name="Boggilastgrense" traffic_sign_tag="NO:322[$weight]">
+		<tag key="maxbogieweight" value="$weight"/>
+		<parameter ident="weight" input="textfield" suffix=' t' default="10"/>
+		<supplementary id="NO:802"/>
+		<supplementary id="NO:808.331"/>
+		<supplementary id="NO:808.333"/>
+	</sign>
+
+	<sign ref="NO:518" name="Gangvei">
+		<tag key="highway" value="footway"/>
+		<supplementary id="NO:808.519"/>
+	</sign>
+	
+	<sign ref="NO:520" name="Sykkelvei">
+		<tag key="highway" value="cycleway"/>
+		<supplementary id="NO:808.519"/>
+	</sign>
+
+	<sign ref="NO:522" name="Gang- og sykkelvei">
+		<tag key="highway" value="cycleway"/>
+		<tag key="foot" value="designated"/>
+		<supplementary id="NO:808.519"/>
+	</sign>
+
+	<sign ref="NO:802" supplementary="yes" name="Avstand" traffic_sign_tag="802[$distance]">
+		<parameter ident="distance" input="textfield" default="100 m"/>
+		<supplementary id="NO:810"/>
+	</sign>
+
+	<sign ref="NO:806" supplementary="yes" name="Tid" traffic_sign_tag="802[$time]">
+		<parameter ident="time" input="textfield" default="08-17"/>
+	</sign>
+
+	<sign ref="NO:807.6" supplementary="yes" name="Sykkel og liten elektrisk motorvogn">
+	</sign>
+
+	<sign ref="NO:807.6U" supplementary="yes" name="Unntatt sykkel og liten elektrisk motorvogn">
+		<tag key="oneway:bicycle" value="no"/>
+	</sign>
+	
+	<sign ref="NO:808.301" supplementary="yes" name="Gjelder gjennomkjøring">
+	</sign>
+	
+	<sign ref="NO:808.303" supplementary="yes" name="Gjelder gjennomkjøring til (vegnavn)">
+	</sign>
+
+	<sign ref="NO:808.305" supplementary="yes" name="Gjelder ikke kjøring til (virksomhet eller adresse)">
+	</sign>
+	
+	<sign ref="NO:808.307" supplementary="yes" name="Gjelder ikke varetransport (tidsrom)">
+	</sign>
+
+
+	<sign ref="NO:808.311" supplementary="yes" name="Gjelder ikke moped">
+	</sign>
+
+	<sign ref="NO:808.331" supplementary="yes" name="Gjelder (bru, undergang) ved (sted)">
+	</sign>
+	
+	<sign ref="NO:808.333" supplementary="yes" name="Gjelder i (by eller sted)">
+	</sign>
+	
+	<sign ref="NO:808.339" supplementary="yes" name="Høgspenning livsfare">
+	</sign>
+	
+	<sign ref="NO:808.341" supplementary="yes" name=".... m ved sentrisk kjøring" traffic_sign_tag="808.341[$height]">
+		<parameter ident="height" input="textfield" suffix=" m" default="4.5"/>
+	</sign>
+	
+	<sign ref="NO:808.343" supplementary="yes" name="Minste kjøretøyavstand .... m">
+	</sign>
+
+	
+	<sign ref="NO:808.345" supplementary="yes" name="(Lastkategori B-E)">
+	</sign>
+
+	<sign ref="NO:808.519" supplementary="yes" name="Kjøring til eiendommene tillatt">
+		<tag key="motor_vehicle" value="destination"/>
+	</sign>
+
+	<sign ref="NO:810" supplementary="yes" name="Svingpil">
+	</sign>
+</roadsignpreset>
