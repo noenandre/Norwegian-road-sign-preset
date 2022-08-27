@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <roadsignpreset country="NO">
+	<sign ref="NO:100.1" name="Farlig høyresving">
+		<tag key="hazard" value="curve"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
+	<sign ref="NO:100.2" name="Farlig venstresving">
+		<tag key="hazard" value="curve"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
+	<sign ref="NO:102.1" name="Farlige svinger, første sving til høyre">
+		<tag key="hazard" value="curves"/>
+	</sign>
+
+	<sign ref="NO:102.2" name="Farlige svinger, første sving til venstre">
+		<tag key="hazard" value="curves"/>
+	</sign>
+	
+	<sign ref="NO:104.1" name="Bratt bakke, stigning">
+		<supplementary id="NO:813.1"/>
+	</sign>
+
+	<sign ref="NO:104.2" name="Bratt bakke, fall">
+		<supplementary id="NO:813.1"/>
+		<supplementary id="NO:813.2"/>
+	</sign>
+	
+	<sign ref="NO:109" name="Fartshump">
+		<tag key="traffic_calming" value="hump"/>
+		<supplementary id="NO:802"/>
+	</sign>
+
 	<sign ref="NO:302" name="Innkjøring forbudt">
 		<tag key="oneway" value="yes" ident="restriction"/>
 		<supplementary id="NO:807.6U"/>
@@ -146,36 +178,74 @@
 		<supplementary id="NO:808.331"/>
 		<supplementary id="NO:808.333"/>
 	</sign>
-	
+
 	<sign ref="NO:362" name="Fartsgrense" traffic_sign_tag="NO:362.$speedlimit">
 		<tag key="maxpspeed" value="$speedlimit"/>
 		<parameter ident="speedlimit" input="textfield" default="60"/>
 		<supplementary id="NO:802"/>
 		<supplementary id="NO:806"/>
 	</sign>
-	
+
 		<sign ref="NO:364" name="Slutt på særskilt fartsgrense" traffic_sign_tag="NO:364.$speedlimit">
 		<tag key="maxpspeed" value="80"/>
 		<parameter ident="speedlimit" input="textfield" default="60"/>
 	</sign>
-	
+
 	<sign ref="NO:366" name="Fartsgrensesone" traffic_sign_tag="NO:366.$speedlimit">
 		<tag key="maxpspeed" value="$speedlimit"/>
 		<parameter ident="speedlimit" input="textfield" default="30"/>
 	</sign>
-	
-	<sign ref="NO:367" name="Fartsgrensesone for liten elektrisk motorvogn" traffic_sign_tag="NO:367.$speedlimit">
+
+	<sign ref="NO:367" name="Fartsgrensesone for liten elektrisk motorvogn" traffic_sign_tag="NO:367[$speedlimit]">
 		<tag key="maxpspeed:small_electric_vehicle" value="$speedlimit"/>
 		<parameter ident="speedlimit" input="textfield" default="6"/>
 	</sign>
-	
+
 	<sign ref="NO:368" name="Slutt på fartsgrensesone" traffic_sign_tag="NO:368.$speedlimit">
 		<tag key="maxpspeed" value="50"/>
 		<parameter ident="speedlimit" input="textfield" default="30"/>
 	</sign>
-	
-	<sign ref="NO:369" name="Slutt på fartsgrensesone for liten elektrisk motorvogn" traffic_sign_tag="NO:369.$speedlimit">
+
+	<sign ref="NO:369" name="Slutt på fartsgrensesone for liten elektrisk motorvogn" traffic_sign_tag="NO:369[$speedlimit]">
 		<parameter ident="speedlimit" input="textfield" default="6"/>
+	</sign>
+
+	<sign ref="NO:370" name="Stans forbudt" traffic_sign_tag="NO:370">
+		<tag key="parking:condition:right" value="no_stopping"/>
+		<supplementary id="NO:806"/>
+	</sign>
+
+	<sign ref="NO:372" name="Parkering forbudt" traffic_sign_tag="NO:372">
+		<tag key="parking:condition:right" value="no_parking"/>
+		<supplementary id="NO:806"/>
+	</sign>
+
+	<sign ref="NO:376.1" name="Parkeringssone" traffic_sign_tag="NO:376.1">
+		<tag key="parking:condition:both" value="free"/>
+	</sign>
+
+	<sign ref="NO:376.2" name="Sone med parkeringsforbud" traffic_sign_tag="NO:376.2">
+		<tag key="parking:condition:both" value="no_parking"/>
+	</sign>
+
+	<sign ref="NO:377" name="Sone med parkeringsforbud for liten elektrisk motorvogn" traffic_sign_tag="NO:377">
+		<tag key="parking:condition:both:small_electric_vehicle" value="no_parking"/>
+	</sign>
+
+	<sign ref="NO:378.1" name="Slutt på parkeringssone">
+	</sign>
+
+	<sign ref="NO:378.2" name="Slutt på sone med parkeringsforbud">
+	</sign>
+
+	<sign ref="NO:379" name="Slutt på sone med parkeringsforbud for liten elektrisk motorvogn">
+	</sign>
+
+	<sign ref="NO:380" name="Sone med bruksforbud for liten elektrisk motorvogn">
+		<tag key="small_electric_vehicle" value="no"/>
+	</sign>
+
+	<sign ref="NO:382" name="Slutt på sone med bruksforbud for liten elektrisk motorvogn">
 	</sign>
 
 	<sign ref="NO:518" name="Gangvei">
@@ -256,7 +326,6 @@
 	<sign ref="NO:808.343" supplementary="yes" name="Minste kjøretøyavstand .... m">
 	</sign>
 
-	
 	<sign ref="NO:808.345" supplementary="yes" name="(Lastkategori B-E)">
 	</sign>
 
@@ -266,4 +335,16 @@
 
 	<sign ref="NO:810" supplementary="yes" name="Svingpil">
 	</sign>
+
+	<sign ref="NO:813.1" supplementary="yes" name="Stigningsgrad[$incline]">
+		<parameter ident="incline" input="textfield" suffix="%" default="10"/>
+		<tag key="incline" value="$incline"/>
+	</sign>
+
+	<sign ref="NO:813.2" supplementary="yes" name="Stigningsgrad[$incline]">
+		<parameter ident="incline" input="textfield" suffix="%" default="9"/>
+		<tag key="incline" value="$incline"/>
+		
+	</sign>
+
 </roadsignpreset>
